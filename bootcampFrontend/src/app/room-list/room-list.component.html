@@ -1,0 +1,7 @@
+<p>
+  room-list works!
+</p>
+
+<td *ngIf = "room.status == 1; else firstTemp"><div style="color:green"> Available </div></td> 
+<!--Else --> 
+<ng-template #firstTemp> <td><div style="color:red"> Unavailable </div></td> </ng-template>
